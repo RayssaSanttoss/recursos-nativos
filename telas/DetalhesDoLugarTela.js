@@ -13,6 +13,12 @@ const DetalhesDoLugarTela = (props) => {
     )
 };
 
+DetalhesDoLugarTela.navigationOptions = (dadosNav) => {
+    return {
+        headerTitle: dadosNav.navigation.getParam ('tituloLugar')
+    }
+}
+
 const estilos = StyleSheet.create ({
 
 });
